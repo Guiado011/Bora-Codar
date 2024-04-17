@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 7</title>
+</head>
+<body>
+    <script>
+        const ns = []
+        var c = 0
+        var t = 0
+
+        for(let i = 1; i <= 6; i++){
+            ns.push(parseInt(prompt(`Digite o valor do ${i}º número`)))
+        }
+        while(c < 6){
+            if(ns[c] < 72){
+                t += ns[c]
+            }
+            c++
+        }
+
+        document.write(
+            "Os números digitados são:" + "<br>" + ns + "<br>" + "A soma total dos números inferiores a 72 é " + t
+        )
+    </script>
+</body>
+</html>

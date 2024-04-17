@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 8</title>
+</head>
+<body>
+    <script>
+        function media(){
+            var n1 = parseFloat(prompt("Digite o valor do 1º número"))
+            if(n1 < 0 || n1 > 10){
+                alert("ERRO!")
+                media()
+            }else{
+                var n2 = parseFloat(prompt("Digite o valor do 2º número"))
+                if(n2 < 0 || n2 > 10){
+                    alert("ERRO!")
+                    media()
+                }else{
+                    var n3 = parseFloat(prompt("Digite o valor do 3º número"))
+                    if(n3 < 0 || n3 > 10){
+                        alert("ERRO!")
+                        media()
+                    }else{
+                        var n4 = parseFloat(prompt("Digite o valor do 4º número"))
+                        if(n4 < 0 || n4 > 10){
+                            alert("ERRO!")
+                            media()
+                        }else{
+                            if(((n1 + n2 + n3 + n4) / 4) <= 5){
+                                document.write("Tente novamente!")
+                            }else{
+                                document.write("Você passou no teste!")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        media()
+    </script>
+</body>
+</html>

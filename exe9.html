@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 9</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Digite o seu ano de nascimento"))
+        var i = 2024 - n
+
+        if(i < 16){
+            document.write("Você ainda não pode votar!")
+        }else if((i >= 16 && i < 18) || i > 60){
+            document.write("Seu voto é facultativo!")
+        }else{
+            document.write("O seu voto é obrigatório!")
+        }
+    </script>
+</body>
+</html>
